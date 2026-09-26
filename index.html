@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veloura luxury boutique — modern premium fashion and accessories." />
+    <title>Veloura | Luxury Boutique</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>Complimentary shipping over $120</span>
+            <span>New collection: Autumn Atelier</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container nav">
+            <div class="brand" aria-label="Veloura home">
+                <div class="brand-mark">V</div>
+                <span>Veloura</span>
+            </div>
+
+            <nav class="nav-links" aria-label="main navigation">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#categories">Collections</a>
+                <a href="#featured">Journal</a>
+                <a href="#offers">Offers</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search">⌕</button>
+                <button class="icon-btn" aria-label="Open cart" id="openCartBtn">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">Dark mode</button>
+                <button class="login-btn">Account</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container hero-wrap">
+                <div class="hero-copy">
+                    <div class="eyebrow">Curated luxury</div>
+                    <h1>Craft a softer everyday.</h1>
+                    <p>
+                        Discover elevated essentials designed for thoughtful living — refined textures, beautiful silhouettes,
+                        and the details that make every day feel more deliberate.
+                    </p>
+
+                    <div class="cta-row">
+                        <a class="shop-btn" href="#shop">Shop the edit</a>
+                        <a class="secondary-btn" href="#featured">View lookbook</a>
+                    </div>
+
+                    <div class="mini-stats">
+                        <div><strong>20k+</strong> loyal clients</div>
+                        <div><strong>4.9/5</strong> global rating</div>
+                        <div><strong>48h</strong> dispatch time</div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Featured product showcase">
+                    <div class="showcase-wrap">
+                        <div class="floating-pill pill-one">★ 4.9 rated</div>
+                        <div class="floating-pill pill-two">New season</div>
+                        <div class="showcase-main">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Luxury fashion model" />
+                        </div>
+                        <div class="showcase-side">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Premium accessory" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="categories">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Shop by collection</h2>
+                    <p>Elevated essentials for every chapter of your day.</p>
+                </div>
+
+                <div class="category-grid">
+                    <article class="category-card">
+                        <div class="category-icon">👠</div>
+                        <h3>Footwear</h3>
+                        <p>Polished silhouettes and soft statement pieces for daily rituals.</p>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon">👜</div>
+                        <h3>Bags</h3>
+                        <p>Functional luxury for work, travel, and dinners that run late.</p>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon">🕶️</div>
+                        <h3>Accessories</h3>
+                        <p>Minimal details that complete a refined, effortless wardrobe.</p>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon">🪷</div>
+                        <h3>Home</h3>
+                        <p>Calm textures and elevated objects for beautifully lived spaces.</p>
+                    </article>
+                    <a class="category-card" href="#furniture">
+                        <div class="category-icon">🪑</div>
+                        <h3>Furniture</h3>
+                        <p>Soft forms and considered pieces for rooms with character.</p>
+                    </a>
+                    <a class="category-card" href="#appliances">
+                        <div class="category-icon">☕</div>
+                        <h3>Appliances</h3>
+                        <p>Useful kitchen and home tools with a refined finish.</p>
+                    </a>
+                    <a class="category-card" href="#gadgets">
+                        <div class="category-icon">◉</div>
+                        <h3>Gadgets</h3>
+                        <p>Smart little upgrades that make daily life feel effortless.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="shop">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Featured pieces</h2>
+                    <p>Most loved by our community.</p>
+                </div>
+
+                <div class="filter-bar" aria-label="Product filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">New</button>
+                    <button class="filter-btn">Bestsellers</button>
+                    <button class="filter-btn">Under $200</button>
+                    <button class="filter-btn">Accessories</button>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <article class="product-card" data-category="new" data-name="Sienna Tote" data-price="180" data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">New</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Sienna Tote handbag" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Bags</span>
+                                <span class="rating">★ 4.9</span>
+                            </div>
+                            <h3 class="product-title">Sienna Tote</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$180</strong><span>$230</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="bestsellers" data-name="Aster Sandal" data-price="150" data-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">Bestseller</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80" alt="Aster Sandal" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Footwear</span>
+                                <span class="rating">★ 4.8</span>
+                            </div>
+                            <h3 class="product-title">Aster Sandal</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$150</strong><span>$210</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="under200" data-name="Lune Silk Scarf" data-price="88" data-image="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">Popular</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=900&q=80" alt="Lune silk scarf" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Accessories</span>
+                                <span class="rating">★ 4.9</span>
+                            </div>
+                            <h3 class="product-title">Lune Silk Scarf</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$88</strong><span>$120</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="accessories" data-name="Noor Frame" data-price="110" data-image="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">Limited</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80" alt="Noor sunglasses" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Accessories</span>
+                                <span class="rating">★ 5.0</span>
+                            </div>
+                            <h3 class="product-title">Noor Frame</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$110</strong><span>$140</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="new" data-name="Celine Leather Case" data-price="96" data-image="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">New</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=900&q=80" alt="Celine leather phone case" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Accessories</span>
+                                <span class="rating">★ 4.8</span>
+                            </div>
+                            <h3 class="product-title">Celine Leather Case</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$96</strong><span>$130</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="bestsellers" data-name="Mila Knit Set" data-price="220" data-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">Bestseller</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Mila Knit Set" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Apparel</span>
+                                <span class="rating">★ 5.0</span>
+                            </div>
+                            <h3 class="product-title">Mila Knit Set</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$220</strong><span>$290</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="under200" data-name="Dara Mini Bag" data-price="164" data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">Value</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Dara Mini Bag" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Bags</span>
+                                <span class="rating">★ 4.7</span>
+                            </div>
+                            <h3 class="product-title">Dara Mini Bag</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$164</strong><span>$198</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="accessories" data-name="Mira Candle Set" data-price="72" data-image="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image">
+                            <span class="tag">Home</span>
+                            <button class="wishlist" aria-label="save item">♡</button>
+                            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80" alt="Mira candle set" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span>Home</span>
+                                <span class="rating">★ 4.9</span>
+                            </div>
+                            <h3 class="product-title">Mira Candle Set</h3>
+                            <div class="price-row">
+                                <div class="price"><strong>$72</strong><span>$95</span></div>
+                                <button class="add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section catalog-section" id="furniture">
+            <div class="container">
+                <div class="section-heading">
+                    <div><div class="eyebrow">The home edit</div><h2>Furniture</h2></div>
+                    <p>Quiet statement pieces for beautifully lived spaces.</p>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card" data-category="furniture" data-name="Luma Lounge Chair" data-price="340" data-image="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">New</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=80" alt="Luma lounge chair" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Furniture</span><span class="rating">★ 4.9</span></div><h3 class="product-title">Luma Lounge Chair</h3><div class="price-row"><div class="price"><strong>$340</strong><span>$420</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                    <article class="product-card" data-category="furniture" data-name="Arco Oak Side Table" data-price="190" data-image="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Hand-finished</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=900&q=80" alt="Arco oak side table" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Furniture</span><span class="rating">★ 4.8</span></div><h3 class="product-title">Arco Oak Side Table</h3><div class="price-row"><div class="price"><strong>$190</strong><span>$240</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                    <article class="product-card" data-category="furniture" data-name="Noma Boucle Bench" data-price="280" data-image="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Bestseller</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Noma boucle bench" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Furniture</span><span class="rating">★ 5.0</span></div><h3 class="product-title">Noma Boucle Bench</h3><div class="price-row"><div class="price"><strong>$280</strong><span>$350</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section catalog-section" id="appliances">
+            <div class="container">
+                <div class="section-heading">
+                    <div><div class="eyebrow">Considered living</div><h2>Appliances</h2></div>
+                    <p>Beautifully useful tools for everyday rituals.</p>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card" data-category="appliances" data-name="Sora Espresso Maker" data-price="260" data-image="https://images.unsplash.com/photo-1517080358651-2c7c8d4d1a9f?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Studio pick</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1517080358651-2c7c8d4d1a9f?auto=format&fit=crop&w=900&q=80" alt="Sora espresso maker" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Appliances</span><span class="rating">★ 4.9</span></div><h3 class="product-title">Sora Espresso Maker</h3><div class="price-row"><div class="price"><strong>$260</strong><span>$320</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                    <article class="product-card" data-category="appliances" data-name="Mori Air Purifier" data-price="210" data-image="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Quiet tech</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=900&q=80" alt="Mori air purifier" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Appliances</span><span class="rating">★ 4.7</span></div><h3 class="product-title">Mori Air Purifier</h3><div class="price-row"><div class="price"><strong>$210</strong><span>$275</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                    <article class="product-card" data-category="appliances" data-name="Kiyo Glass Kettle" data-price="130" data-image="https://images.unsplash.com/photo-1594213114663-d94db9b171b7?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">New</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1594213114663-d94db9b171b7?auto=format&fit=crop&w=900&q=80" alt="Kiyo glass kettle" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Appliances</span><span class="rating">★ 4.8</span></div><h3 class="product-title">Kiyo Glass Kettle</h3><div class="price-row"><div class="price"><strong>$130</strong><span>$165</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section catalog-section" id="gadgets">
+            <div class="container">
+                <div class="section-heading">
+                    <div><div class="eyebrow">Small wonders</div><h2>Gadgets</h2></div>
+                    <p>Thoughtful tech with a softer point of view.</p>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card" data-category="gadgets" data-name="Halo Desk Speaker" data-price="145" data-image="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Bestseller</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80" alt="Halo desk speaker" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Gadgets</span><span class="rating">★ 4.9</span></div><h3 class="product-title">Halo Desk Speaker</h3><div class="price-row"><div class="price"><strong>$145</strong><span>$180</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                    <article class="product-card" data-category="gadgets" data-name="Orbit Charging Dock" data-price="84" data-image="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Under $100</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80" alt="Orbit charging dock" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Gadgets</span><span class="rating">★ 4.8</span></div><h3 class="product-title">Orbit Charging Dock</h3><div class="price-row"><div class="price"><strong>$84</strong><span>$110</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                    <article class="product-card" data-category="gadgets" data-name="Luma Sunrise Clock" data-price="118" data-image="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=900&q=80">
+                        <div class="product-image"><span class="tag">Popular</span><button class="wishlist" aria-label="save item">♡</button><img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=900&q=80" alt="Luma sunrise clock" /></div>
+                        <div class="product-info"><div class="product-meta"><span>Gadgets</span><span class="rating">★ 4.9</span></div><h3 class="product-title">Luma Sunrise Clock</h3><div class="price-row"><div class="price"><strong>$118</strong><span>$150</span></div><button class="add-to-cart">Add</button></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="featured">
+            <div class="container">
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Complimentary delivery</h3>
+                        <p>Free shipping over $120 and tracked delivery on every order across the country.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">↻</div>
+                        <h3>Simple returns</h3>
+                        <p>Easy exchanges and 30-day returns on all full-price pieces for peace of mind.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure shopping</h3>
+                        <p>Encrypted checkout and trusted payment partners for confident, secure orders.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo" id="offers">
+            <div class="container">
+                <div class="promo-card">
+                    <div>
+                        <h3>Autumn Atelier Sale</h3>
+                        <p>Enjoy up to 40% off selected statement pieces and wardrobe essentials.</p>
+                    </div>
+                    <a class="cta-btn" href="#shop">Shop the drop</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div>
+                        <h3>Join the Veloura list</h3>
+                        <p>Receive new arrivals, offers, and styling notes from the studio.</p>
+                    </div>
+
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); this.reset(); alert('You are subscribed to Veloura!');">
+                        <input type="email" placeholder="Email address" aria-label="Email address" required />
+                        <button class="primary-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="brand" style="color:#fff; margin-bottom: 16px;">
+                        <div class="brand-mark">V</div>
+                        <span>Veloura</span>
+                    </div>
+                    <p>Refined essentials for beautifully lived days.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Shop</h4>
+                        <a href="#">New arrivals</a>
+                        <a href="#">Bestsellers</a>
+                        <a href="#">Lookbook</a>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <a href="#">Our story</a>
+                        <a href="#">Journal</a>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div>
+                        <h4>Support</h4>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Veloura</span>
+                <span>Privacy · Terms · Contact</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay" aria-label="Shopping cart panel">
+        <aside class="cart-panel" aria-label="Cart panel">
+            <div class="cart-header">
+                <h3>Your bag</h3>
+                <button class="close-cart" id="closeCartBtn" aria-label="Close cart">×</button>
+            </div>
+
+            <div class="cart-items" id="cartItems">
+                <div style="padding: 22px; color: var(--muted);">Your cart is empty.</div>
+            </div>
+
+            <div class="cart-footer">
+                <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+                <div class="summary-row"><span>Shipping</span><span id="cartShipping">$0</span></div>
+                <div class="summary-row total"><span>Total</span><span id="cartTotal">$0</span></div>
+                <a class="primary-btn" style="width:100%; margin-top: 10px;" href="checkout.html">Proceed to checkout</a>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
