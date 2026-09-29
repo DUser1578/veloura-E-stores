@@ -10,8 +10,9 @@
     <div class="topbar"><div class="container topbar-inner"><span>Secure payment</span><span>Step 3 of 3</span></div></div>
     <header><div class="container nav">
         <a class="brand" href="index.html" aria-label="Veloura home"><div class="brand-mark">V</div><span>Veloura</span></a>
-        <nav class="nav-links" aria-label="Payment navigation"><a href="checkout.html">Back to details</a><a href="index.html">Shop</a></nav>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">Dark mode</button>
+        <nav class="nav-links" id="mainNavigation" aria-label="Payment navigation"><a href="checkout.html">Back to details</a><a href="index.html">Shop</a><a href="account.html">Account</a></nav>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation"><span></span><span></span><span></span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch theme">☾</button>
     </div></header>
 
     <main class="page-shell">
@@ -20,6 +21,7 @@
             <div class="checkout-wrap">
                 <div class="checkout-card">
                     <h3>Card payment</h3>
+                    <p class="demo-notice">Demo checkout only. Payment details are not charged or saved.</p>
                     <form class="checkout-form" id="paymentForm">
                         <div class="field full"><label for="card">Card number</label><input id="card" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" minlength="12" required /></div>
                         <div class="field"><label for="exp">Expiry</label><input id="exp" type="text" placeholder="MM/YY" required /></div>

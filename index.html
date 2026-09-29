@@ -22,22 +22,37 @@
                 <span>Veloura</span>
             </div>
 
-            <nav class="nav-links" aria-label="main navigation">
+            <nav class="nav-links" id="mainNavigation" aria-label="main navigation">
                 <a href="#home">Home</a>
                 <a href="#shop">Shop</a>
                 <a href="#categories">Collections</a>
                 <a href="#featured">Journal</a>
                 <a href="#offers">Offers</a>
+                <a href="account.html">Account</a>
             </nav>
 
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation">
+                <span></span><span></span><span></span>
+            </button>
+
             <div class="nav-actions">
-                <button class="icon-btn" aria-label="Search">⌕</button>
+                <button class="icon-btn" id="searchToggle" aria-label="Search products" title="Search products">⌕</button>
                 <button class="icon-btn" aria-label="Open cart" id="openCartBtn">
                     🛒
                     <span class="cart-count" id="cartCount">0</span>
                 </button>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">Dark mode</button>
-                <button class="login-btn">Account</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch theme">☾</button>
+                <a class="login-btn" href="account.html">Account</a>
+            </div>
+        </div>
+        <div class="search-panel" id="searchPanel" aria-hidden="true">
+            <div class="container search-panel-inner">
+                <label class="search-field" for="productSearch">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="productSearch" type="search" placeholder="Search bags, furniture, gadgets..." autocomplete="off" />
+                </label>
+                <button class="search-clear" id="searchClear" type="button">Clear</button>
+                <span class="search-status" id="searchStatus" aria-live="polite"></span>
             </div>
         </div>
     </header>
@@ -67,14 +82,16 @@
 
                 <div class="hero-visual" aria-label="Featured product showcase">
                     <div class="showcase-wrap">
-                        <div class="floating-pill pill-one">★ 4.9 rated</div>
-                        <div class="floating-pill pill-two">New season</div>
                         <div class="showcase-main">
                             <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Luxury fashion model" />
                         </div>
                         <div class="showcase-side">
                             <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Premium accessory" />
                         </div>
+                    </div>
+                    <div class="showcase-notes" aria-label="Collection highlights">
+                        <div class="floating-pill pill-one">★ 4.9 rated</div>
+                        <div class="floating-pill pill-two">New season</div>
                     </div>
                 </div>
             </div>
@@ -127,7 +144,7 @@
             </div>
         </section>
 
-        <section class="section" id="shop">
+        <section class="section catalog-section" id="shop">
             <div class="container">
                 <div class="section-heading">
                     <h2>Featured pieces</h2>
@@ -257,9 +274,9 @@
                         </div>
                     </article>
 
-                    <article class="product-card" data-category="under200" data-name="Dara Mini Bag" data-price="164" data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80">
+                    <article class="product-card" data-category="bestsellers" data-name="Dara Mini Bag" data-price="164" data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80">
                         <div class="product-image">
-                            <span class="tag">Value</span>
+                            <span class="tag">Bestseller</span>
                             <button class="wishlist" aria-label="save item">♡</button>
                             <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Dara Mini Bag" />
                         </div>
@@ -445,9 +462,9 @@
                     </div>
                     <div>
                         <h4>Support</h4>
-                        <a href="#">Shipping</a>
-                        <a href="#">Returns</a>
-                        <a href="#">FAQ</a>
+                        <a href="support.html#shipping">Shipping</a>
+                        <a href="support.html#returns">Returns</a>
+                        <a href="support.html#faq">FAQ</a>
                     </div>
                 </div>
             </div>

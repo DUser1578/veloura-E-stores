@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veloura | Your account</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="topbar"><div class="container topbar-inner"><span>Welcome to Veloura</span><span>Your account</span></div></div>
+    <header><div class="container nav">
+        <a class="brand" href="index.html" aria-label="Veloura home"><div class="brand-mark">V</div><span>Veloura</span></a>
+        <nav class="nav-links" id="mainNavigation" aria-label="Account navigation"><a href="index.html">Back to shop</a><a href="checkout.html">Checkout</a></nav>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation"><span></span><span></span><span></span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch theme">☾</button>
+    </div></header>
+
+    <main class="page-shell">
+        <div class="container account-container">
+            <div class="page-intro"><div class="eyebrow">Veloura membership</div><h1>Your account.</h1><p>Sign in or create an account to continue shopping.</p></div>
+            <section class="account-card" aria-labelledby="accountHeading">
+                <div id="accountSession" class="account-session" hidden>
+                    <h2 id="accountHeading">You're signed in</h2>
+                    <p id="accountWelcome"></p>
+                    <div class="account-actions"><a class="primary-btn" href="index.html">Continue shopping</a><button class="secondary-btn" id="signOutButton" type="button">Sign out</button></div>
+                </div>
+                <div id="accountAccess">
+                    <div class="account-switch" role="tablist" aria-label="Account access">
+                        <button class="account-tab active" id="signInTab" type="button" role="tab" aria-selected="true">Sign in</button>
+                        <button class="account-tab" id="createTab" type="button" role="tab" aria-selected="false">Create account</button>
+                    </div>
+                    <form class="account-form" id="signInForm">
+                        <h2 id="accountHeading">Welcome back</h2>
+                        <div class="field"><label for="signInEmail">Email</label><input id="signInEmail" type="email" autocomplete="email" required /></div>
+                        <div class="field"><label for="signInPassword">Password</label><input id="signInPassword" type="password" autocomplete="current-password" required /></div>
+                        <p class="account-message" id="signInMessage" aria-live="polite"></p>
+                        <button class="primary-btn" type="submit">Sign in</button>
+                    </form>
+                    <form class="account-form" id="createAccountForm" hidden>
+                        <h2>Create your account</h2>
+                        <div class="field"><label for="createName">Full name</label><input id="createName" type="text" autocomplete="name" required /></div>
+                        <div class="field"><label for="createEmail">Email</label><input id="createEmail" type="email" autocomplete="email" required /></div>
+                        <div class="field"><label for="createPassword">Password</label><input id="createPassword" type="password" autocomplete="new-password" minlength="8" required /></div>
+                        <div class="field"><label for="confirmPassword">Confirm password</label><input id="confirmPassword" type="password" autocomplete="new-password" minlength="8" required /></div>
+                        <p class="account-message" id="createAccountMessage" aria-live="polite"></p>
+                        <button class="primary-btn" type="submit">Create account</button>
+                    </form>
+                </div>
+                <p class="local-account-note">Demo account stored only in this browser. Use a unique password; this static site has no server-side authentication.</p>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
